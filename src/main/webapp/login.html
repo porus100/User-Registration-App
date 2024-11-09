@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Very light grey background */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        #frm {
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: #ffffff; /* White form background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
+        .marquee {
+            margin-top: 10px;
+            color: #333; /* Dark grey for marquee text */
+            background-color: #e0e0e0; /* Light grey background for marquee */
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for marquee */
+        }
+        .card-header {
+            background-color: #333; /* Dark grey for header */
+            border-top-left-radius: 10px; /* Rounded corners for top-left */
+            border-top-right-radius: 10px; /* Rounded corners for top-right */
+            color: #fff; /* White text */
+        }
+        .table-hover td {
+            padding: 10px;
+        }
+        .table-hover tr:hover {
+            background-color: #e0e0e0; /* Light grey for hover effect */
+        }
+        .btn-outline-success, .btn-outline-danger {
+            color: #333; /* Dark grey for button text */
+            border-color: #333; /* Dark grey border */
+            transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for effects */
+        }
+        .btn-outline-success:hover, .btn-outline-danger:hover {
+            background-color: #f0f0f0; /* Very light grey background on hover */
+            color: #333; /* Dark grey text on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+            transform: translateY(-3px); /* Slight lift effect */
+        }
+        .card-footer {
+            background-color: #ffffff; /* White background for footer */
+            border-bottom-left-radius: 10px; /* Rounded corners for bottom-left */
+            border-bottom-right-radius: 10px; /* Rounded corners for bottom-right */
+        }
+    </style>
+</head>
+<body class="container-fluid">
+<marquee class="marquee">Login into User Registration Application!</marquee>
+    <form action="log" method="post" class="form card" id="frm">
+        <h2 class="card-header">Login</h2>
+        <table class="table table-hover">
+            <tr>
+                <td>UserName</td>
+                <td><input type="text" name="uname" id="uname" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pword" id="pword" required></td>
+            </tr>
+            <tr class="card-footer">
+                <td><input type="submit" class="btn btn-outline-success" value="Login"></td>
+                <td><a href="register.html" class="btn btn-outline-success">New User?</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
